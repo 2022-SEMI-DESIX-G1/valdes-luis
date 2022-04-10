@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Laboratorio No2</title>
+</head>
+<body onload="operaciones()">
+   <h3>¿Qué es Javascript y en qué se asemeja a Java?</h3>
+    <p>
+        JavaScript es un lenguaje de programación o de secuencias de comandos que te permite 
+        implementar funciones complejas en páginas web, cada vez que una página web hace 
+        algo más que sentarse allí y mostrar información estática para que la veas, muestra oportunas 
+        actualizaciones de contenido, mapas interactivos, animación de Gráficos 2D/3D, 
+        desplazamiento de máquinas reproductoras de vídeo, etc., puedes apostar que probablemente JavaScript está involucrado.<br>
+        La unica semejanza que existe es que ambos son lenguajes de programacion.
+    </p>
+</body>
+<script>
+function operaciones() {
+  var x = 20;
+  var y = 5;
+  console.log("suma:" + (x + y));
+  console.log("resta:" + (x - y));
+  console.log("multiplicacion:" + (x * y));
+  console.log("division:" + (x / y));
+  let valor1 = "Luis";
+  let valor2 = "Valdes";
+  console.log("Mi nombre es: " + valor1 + " " + valor2);
+  const valorx = 10;
+  const valory = "LUIS";
+  console.log("El primer valor es: " + typeof valorx);
+  console.log("El segundo valor es: " + typeof valory);
+  let vobjeto = {     
+      id: 1,  
+      nombre: "Luis",        
+      Antivacuna: false,
+      Pasatiempos: null
+    };
+  
+    console.log(Object.values(vobjeto));
+
+}
+</script>
+</html>
