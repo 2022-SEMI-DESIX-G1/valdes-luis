@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Laboratorio No3</title>
+</head>
+<body>
+    <form name="form" action="" method="get">
+        <h2>Ingrese el Valor</h2>
+        <input type="text" name="valor" id="valor">
+        <button onclick="palindromo()">Palindromo</button>
+
+        <h2>Contar Caracteres</h2>
+        <input type="text" name="cadena" id="cadena">
+        <button onclick="caracteres()">Contar</button>
+
+        <h2>Año Bisiesto</h2>
+        <input type="text" name="year" id="year">
+        <button onclick="bisiesto()">Verificar</button>
+
+        <h2>Suma Numeros Primos</h2>
+        <input type="text" name="num" id="num">
+        <button onclick="primos()">Verificar</button>
+</form>
+</body>
+<script>
+function palindromo() {
+    var v_valor = document.getElementById("valor").value; 
+    var valor_binario = (+v_valor).toString(2);
+    var valor_original = v_valor.toString();
+    var valor_xbinario = "";
+    var valor_xoriginal = "";
+    var v_count = 0;
+    var v_mensaje = ""; 
+    //alert("binario: " + valor_binario);
+    //alert("valor: " + valor_original);
+
+    v_count = valor_original.length;
+    do
+        {
+        
+            valor_xoriginal = valor_xoriginal + valor_original.substring(v_count-1,v_count);
+            
+            v_count = v_count -1;
+        }
+    while (v_count!=0);
+    //alert("valor original inverso: " + valor_xoriginal);
+
+    v_count = valor_binario.length; 
+    do
+        {
+        
+            valor_xbinario = valor_xbinario + valor_binario.substring(v_count-1,v_count);
+            
+            v_count = v_count -1;
+        }
+    while (v_count!=0);
+    //alert("valor binario inverso: " + valor_xbinario);
+
+    if ((valor_original == valor_xoriginal) && (valor_binario == valor_xbinario)){
+        v_mensaje = " Es un palindromo de doble base";
+    }
+    else
+    {
+        v_mensaje = " No es un palindromo de doble base";
+    }
+
+    alert("El valor original: " + valor_original + " y valor binario: " + valor_binario + v_mensaje);
+}
+
+function caracteres() {
+  var str = document.getElementById("cadena").value; //capturamos el valor del text de html
+  str = str.replace(/\s/g, ""); //Limpiamos espacios en blanco
+  resultado = {} //Aquie guardaremos los resultados
+  for(let char in str){ //Cogemos el indice de cada caracter
+	if(str[char] in resultado) { //Si ya existe, incrementamos el contador
+		resultado[str[char]] = resultado[str[char]] + 1
+	} else { // Si no existe, lo inicializamos a 1
+		resultado[str[char]] = 1
+    }
+}
+  //Mostramos los datos finales
+  respuesta = ``
+  Object.keys(resultado).forEach(function(letra){
+    respuesta += `La cantidad de ${letra} es: ${resultado[letra]} \n`
+  })
+  alert(respuesta);
+}
+
+function bisiesto() {
+    var Year = document.getElementById("year").value;
+    if (((Year % 4 == 0) && (Year % 100 != 0 )) || (Year % 400 == 0)){
+        alert(Year + ' Es bisiesto. ');
+    }
+    else {
+        alert(Year + ' No es bisiesto. ');
+    }
+}
+function primos() {
+    var x_num = document.getElementById("num").value;
+    var v_num = parseInt(x_num);
+    var v_residuo = 0;
+    var v_count = 0
+    var v_sumatoria = 0;
+    for (let x=1; x <= v_num; x++) {
+        v_count = 0
+        for (let y=1; y <= x; y++) {
+            v_residuo = (x % y);
+            if (v_residuo == 0){
+                v_count = v_count + 1;
+            }
+        }
+        if (v_count <= 2){
+                v_sumatoria = v_sumatoria + x;
+            }
+}
+        alert(v_sumatoria);
+}
+</script>
+</html>
