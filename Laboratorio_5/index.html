@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio #5</title>
+</head>
+<body>
+    <section>
+        <form id="fibonacci">
+            <label for="size">Ingrese un numero para generar la serie fibonachi:</label>
+            <input id="size" type="text">
+            <button type="submit">Generar</button>
+        </form>
+    </section>
+    <section>
+        <div id="response"></div>
+    </section>
+    <script src="utils.js"></script>
+    <script src="index.js"></script>
+    <style>
+        #response {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            padding: 1rem;
+            border: 1px solid grey;
+            margin: 1rem;
+            background: green;
+            color: white;
+            border-radius: 1%;
+            height: 100px;
+            width: 100px;
+            text-align:center;
+            font-size: xx-large;
+            font-style: bold;
+            line-height: 75px;
+        }
+    </style>
+</body>
+</html>
