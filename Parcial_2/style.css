@@ -1,0 +1,100 @@
+
+body {
+  margin: 0;
+  background-color:black;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  color: black;
+  text-transform: capitalize;
+}
+
+#principal{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+  flex-wrap: wrap;  
+}
+
+.busqueda{
+  background: white;
+  display: flex;
+  flex-direction: column;
+  padding: 35px 40px 30px 45px;
+  border: 1px solid black;
+  border-radius: 6px;
+  min-width: 500px;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.busqueda img{
+  position: absolute;
+  top: -67px;
+  left: 160px;
+}
+
+.subdiv{
+  height: 100%;
+}
+
+input[type=text]{
+  height: 100%;
+  border:none;
+  background: rgb(236, 236, 236);
+  border-radius: 4px;
+  padding: 6px;
+}
+
+select{
+  height: 50%;
+  border:none;
+  background: rgb(236, 236, 236);
+  border-radius: 4px;
+  padding: 6px;
+}
+
+form{
+  display: flex;
+  height: 100%;
+}
+
+.prp_card{
+  padding: 35px ;
+  min-width: 70%;
+  position: relative;
+  margin-bottom: 25px;
+  align-items: center;
+
+}
+.pock_card{
+  background-color: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border-radius: 6px;
+  height: 500px;
+  width:400px;
+  margin:0px auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+button{
+  width: 90px;
+  margin-top: 20px;
+  background: rgba(0, 140, 255, 0.911);
+  border: none;
+  align-items: center;
+  border-radius: 4px;
+  padding: 6px;
+  color: white;
+  text-decoration:dashed;
+}
+
+@media (max-width: 650px) {
+  #pokemon-finder-form{
+      display: flex;
+      flex-direction: column;
+  }}

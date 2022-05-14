@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Parcial No 2</title>
+</head>
+<body>
+    <div id="principal">
+        <section class="busqueda">
+            <img alt="PokéAPI" src="https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png"/>
+            <h1>Buscador de Pokemones</h1>
+            <h5>Busca desde pokemones hasta habilidades de los mismos</h5>
+            <form id="pokemon-finder-form">
+                <div class="subdiv">
+                    <label for="">Buscar</label>
+                    <input id="pokemon-finder-query" class="input" type="text" /><br>
+                    <button id="clear">Limpiar</button>
+                </div>
+                <div class="subdiv">
+                    <label for="">Tipo de búsqueda</label>
+                    <select id="pokemon-finder-search-type">
+                      <option value="pokemon">pokemon</option>
+                      <option value="ability">ability</option>
+                    </select><br>
+                    <button type="submit" id="buscar">Buscar</button>
+                </div>
+              </form>
+        </section>
+
+        <section id="pokemon-finder-response"></section>
+        <script src="utils.js"></script>
+        <script src="index.js"></script>
+  </div>
+</body>
+</html>
