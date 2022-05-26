@@ -41,7 +41,7 @@ prompt.get(['Nombre'], function (err, result) {
                         })
             })
 
-      console.log(`Id: ${response.data.id}, Nombre: ${response.data.name}`);
+      console.log(`Id: ${response.data.id}, Nombre: ${response.data.name}, Weight: ${response.data.weight}, Height: ${response.data.height}, Habilidades: ${response.data.abilities.map((ability) => {return `${ability.ability.name}, `;}).join("")}`);
     })
     .catch(function(error) {
       if(error.response) {
