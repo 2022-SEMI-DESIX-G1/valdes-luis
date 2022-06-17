@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Proyecto No 1</title>
+</head>
+<body>
+    <div id="principal">
+        <section class="searches">
+            <img alt="PokéAPI" src="https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png"/>
+            <div id="titles">
+            <h1>Pokemon Finder</h1>
+            </div>
+            <form id="pokemon-finder-form">
+                    <div id="check">
+                        <input type="checkbox" id="sprites" name="sprites" value="1">
+                        <label for="sprites">Sprites&nbsp&nbsp&nbsp</label><br>
+                        <input type="checkbox" id="locations" name="locations" value="3">
+                        <label for="locations">Locations</label><br><br>
+                        <input type="checkbox" id="evolutions" name="evolutions" value="2">
+                        <label for="evolutions">Evolutions&nbsp&nbsp&nbsp</label><br>
+                    </div>
+                    <div id="find">
+                    <label for="">Search</label>
+                    <input id="pokemon-finder-query" class="input" type="text" />
+                    </div>
+                    <div id="buttons">
+                    <button id="clean">Clean</button>
+                    <br>
+                    <button type="submit" id="search">Search</button>
+                    </div>
+              </form>
+        </section>
+
+        <section id="pokemon-finder-response"></section>
+        <script src="utils.js"></script>
+        <script src="index.js"></script>
+  </div>
+</body>
+</html>
