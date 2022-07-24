@@ -1,0 +1,211 @@
+:root {
+    --bg-color-bg-blue: #004c97;
+    --bg-color-royal-dark: #003882;
+    --bg-color-royal: #06c;
+    --bg-color-royal-light: #00509f;
+    --bg-color-orange-dark: #bd5a00;
+    --bg-color-orange: #ff7900;
+    --bg-color-orange-light: #ff973c;
+    --bg-color-frost: #f1f9ff;
+    --bg-color-crystal: #f9fdff;
+    --bg-color-aluminium: #d2d6de;
+    --bg-color-sky-light: #e1f0ff;
+    --bg-color-ink: #292e38;
+    --bg-color-denim: #444c5e;
+  
+    --gap-poquitin: 4px;
+    --gap-cool: 16px;
+    --gap-bastante: 24px;
+    --gap-rantan: 48px;
+  }
+  
+#link-yappy {
+    text-decoration:none;
+    color: var(--bg-color-frost);
+}
+
+    .button-yappy {
+        position: absolute;
+        height: 15%;
+        width: 50%;
+        top:115%;
+        left: 36%;
+        transform: translate(-50%, -50%);
+    }
+
+  .p-cool {
+    padding: var(--gap-cool) !important;
+  }
+  
+  button.ecommerce {
+    display: flex !important;
+    align-items: center !important;
+    width: 100% !important;
+    border: 0 !important;
+    text-transform: none !important;
+    height: var(--gap-rantan) !important;
+    justify-content: center !important;
+    background: white !important;
+    border-color: white !important;
+    border-radius: var(--gap-poquitin) !important;
+    font-weight: bold !important;
+    font-size: var(--gap-cool) !important;
+    line-height: var(--gap-bastante) !important;
+    padding: 0 !important;
+    outline: 0 !important;
+    transition: 0.3s ease !important;
+    text-decoration: none !important;
+    min-width: 160px !important;
+    max-width: 500px !important;
+    margin: auto !important;
+  }
+  
+  .bg-payment-container.mobile button.ecommerce {
+    height: 56px !important;
+  }
+  
+  button.ecommerce:focus {
+    outline: 0 !important;
+  }
+  
+  button.ecommerce>svg {
+    width: var(--gap-rantan) !important;
+    margin-left: var(--gap-poquitin) !important;
+  }
+  
+  button.ecommerce:not(.yappy)>svg {
+    display: none !important;
+  }
+  
+  button.ecommerce.blue {
+    color: white !important;
+    background: var(--bg-color-bg-blue) !important;
+    border-color: var(--bg-color-bg-blue) !important;
+  }
+  
+  button.ecommerce.blue:hover {
+    background: var(--bg-color-royal-dark) !important;
+    border-color: var(--bg-color-royal-dark) !important;
+  }
+  
+  button.ecommerce.frost {
+    color: var(--bg-color-bg-blue) !important;
+    background: var(--bg-color-frost) !important;
+    border-color: var(--bg-color-frost) !important;
+  }
+  
+  button.ecommerce.frost:hover {
+    background: var(--bg-color-frost) !important;
+    border-color: var(--bg-color-frost) !important;
+  }
+  
+  button.ecommerce.white {
+    color: var(--bg-color-bg-blue) !important;
+    border: 1px solid var(--bg-color-aluminium) !important;
+  }
+  
+  button.ecommerce.white:hover {
+    background: var(--bg-color-sky-light) !important;
+    border-color: transparent !important;
+  }
+  
+  button.ecommerce.dark {
+    color: white;
+    background: var(--bg-color-ink) !important;
+    border-color: var(--bg-color-ink) !important;
+  }
+  
+  button.ecommerce.dark:hover {
+    background: var(--bg-color-denim) !important;
+    border-color: var(--bg-color-denim) !important;
+  }
+  
+  button.ecommerce.dark:active {
+    background: black !important;
+    border-color: black !important;
+  }
+  
+  button.ecommerce.royal {
+    color: white !important;
+    background: var(--bg-color-royal) !important;
+    border-color: var(--bg-color-royal) !important;
+  }
+  
+  button.ecommerce.royal:hover {
+    background: var(--bg-color-royal-light) !important;
+    border-color: var(--bg-color-royal-light) !important;
+  }
+  
+  button.ecommerce.royal:active {
+    background: var(--bg-color-royal-dark) !important;
+    border-color: var(--bg-color-royal-dark) !important;
+  }
+  
+  button.ecommerce.orange {
+    color: white;
+    background: var(--bg-color-orange) !important;
+    border-color: var(--bg-color-orange) !important;
+  }
+  
+  button.ecommerce.orange:hover {
+    background: var(--bg-color-orange-light) !important;
+    border-color: var(--bg-color-orange-light) !important;
+  }
+  
+  button.ecommerce.orange:active {
+    background: var(--bg-color-orange-dark) !important;
+    border-color: var(--bg-color-orange-dark) !important;
+  }
+  
+  #order_review.bg #place_order {
+    display: none !important;
+    position: relative !important;
+    left: 9600px;
+  }
+  
+  .bg {
+    opacity: 1;
+  }
+  
+  .payment_method_yappy_payment {
+    padding: 0 !important;
+  }
+  
+  .yappy-logo {
+    margin: 0 var(--gap-poquitin) !important;
+    width: 97px !important;
+    height: 24px !important;
+    background-repeat: no-repeat !important;
+  }
+  
+  .yappy-logo.blue {
+    background: url("yappy-logo-brand.svg");
+  }
+  
+  .yappy-logo.frost,
+  .yappy-logo.white {
+    background: url("yappy-logo-light.svg");
+  }
+  
+  .yappy-logo.dark {
+    height: 26px !important;
+    background: url("yappy-logo-dark.svg");
+  }
+  
+  .bold-font {
+    font-weight: bold !important;
+  }
+  
+  .payment_method_yappy_payment img {
+    max-width: 60px !important;
+    width: 60px !important;
+    max-height: 30px !important;
+  }
+  
+  .about_yappy {
+    cursor: pointer;
+  }
+  
+  .bg-none {
+    display: none !important;
+  }

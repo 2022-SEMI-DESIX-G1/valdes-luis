@@ -1,0 +1,13 @@
+@media (max-width: 767.98px) { .border-sm-start-none { border-left: none !important; } }
+
+.inner {
+    overflow: hidden;
+}
+
+.the-image {
+    transition: all 1.5s ease;
+}
+
+.the-image:hover {
+    transform: scale(1.5);
+}

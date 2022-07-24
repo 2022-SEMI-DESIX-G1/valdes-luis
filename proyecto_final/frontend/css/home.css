@@ -1,0 +1,48 @@
+.carousel-item {
+    height: 32rem;
+    background: #000;
+    color: white;
+    position: relative;
+}
+.containerDif {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 50px;
+}
+.overlay-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.7;
+}
+
+.feature {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    width: 4rem;
+    font-size: 2rem;
+  }
+
+  .service-sierra {
+    background-color: #ff9800!important;
+  }
+
+  .link {
+    color: #ff9800!important;
+  }
+
+  .link:hover {
+    color: #d78912!important;
+  }
+
+  .icon-testimonial {
+    color: #ff9800!important;
+  } 
