@@ -3,7 +3,6 @@
         htmlElements: {
           documentDOM: document,
           responsePost: document.querySelector("#responsePost"),
-          idDOM: document.querySelector("#id"),
           role: sessionStorage.getItem("role"),
           dataPedidos: [],
       },
@@ -99,7 +98,7 @@
                                       </table>
                                   </div>
                               </div>`;
-                App.htmlElements.idDOM.innerHTML = tarjeta;
+                return tarjeta;
         },
         errorCard: () => console.log("no trae los pedidos"),
         notLoggedCard: () => `<div class="container">
